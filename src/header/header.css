@@ -1,0 +1,12 @@
+nav{
+    display: flex;
+    text-align:center;
+    height:80px;
+    align-items:center;
+    background:#000;
+}
+nav a{
+    flex:1;
+    text-align: center;
+    color:#fff;
+}
