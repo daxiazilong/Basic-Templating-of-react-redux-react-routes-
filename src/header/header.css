@@ -9,4 +9,8 @@ nav a{
     flex:1;
     text-align: center;
     color:#fff;
+    text-decoration: none;
+}
+nav a.active{
+    color:red;
 }

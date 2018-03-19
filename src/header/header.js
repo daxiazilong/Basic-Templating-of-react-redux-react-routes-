@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import {ActiveItems} from './customActive'
 import './header.css';
 class Header extends Component{
     constructor(props,state){
@@ -13,11 +14,9 @@ class Header extends Component{
         console.log(en)
         return(
             <nav>
-
-                <Link to='/first'>我是第一个页面</Link>
-
-                <Link to='/second'> 我是第二个</Link>
-                <Link to='/'> 返回首页</Link>
+                <ActiveItems activeOnlyWhenExact={true}  to="/first" label="我是第一个页面" />
+                <ActiveItems activeOnlyWhenExact={true}  to="/second" label="我是第二个" />
+                <ActiveItems activeOnlyWhenExact={true}  to="/" label="返回首页" />
             </nav>
         )
     }

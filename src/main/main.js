@@ -9,6 +9,7 @@ import First from './first';
 import Second from './second';
 
 
+
 class Main extends Component {
     constructor(props,state){
         super();
@@ -27,6 +28,7 @@ class Main extends Component {
     render(){
         return(
             <Switch>
+              
                 <Route exact path='/' render = { () => ( <div>
                     我是首页
                     <input type="text" onInput = { e => { this.handleInput(e.target.value) } } />
