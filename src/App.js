@@ -3,6 +3,7 @@ import Header from './header/header';
 import Main from './main/main';
 import logo from './logo.svg';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom'
 
 import './App.css';
 
@@ -32,6 +33,6 @@ class App extends Component {
 const state2props = (state) => {
     return {text:state.text}
 };
-App = connect(state2props)(App)
+App = withRouter(connect(state2props)(App))
 
 export default App;

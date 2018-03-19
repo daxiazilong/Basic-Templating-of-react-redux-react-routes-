@@ -4,7 +4,7 @@ import  {
     Route,
 } from 'react-router-dom';
 import { connect } from 'react-redux'
-
+import { withRouter } from 'react-router-dom'
 import First from './first';
 import Second from './second';
 
@@ -40,7 +40,7 @@ class Main extends Component {
 
 // 
 
-Main = connect()(Main)
-console.log(connect)
+Main = withRouter(connect()(Main))
+
 
 export default Main;
