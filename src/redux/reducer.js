@@ -1,7 +1,7 @@
 import ADD_INPUT from './action';
 
 const initialState = {
-    text:'嘿嘿',
+    text:'君不见黄河之水天上来',
     test:123
 }
 
