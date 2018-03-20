@@ -22,7 +22,7 @@ class App extends Component {
         </header>
         <p className="App-intro">
           我想显示首页输入的东东：
-            {this.props.text}
+            <span>{this.props.text}</span>
         </p>
         <Header message="hi"></Header>
         <Main />
